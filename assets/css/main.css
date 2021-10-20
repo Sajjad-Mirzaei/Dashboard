@@ -1,0 +1,620 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/eot/IRANSansWeb_Black.eot');
+    src: url('../fonts/eot/IRANSansWeb_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../fonts/woff2/IRANSansWeb_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/woff/IRANSansWeb_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/ttf/IRANSansWeb_Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/eot/IRANSansWeb_Bold.eot');
+    src: url('../fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/woff/IRANSansWeb_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/eot/IRANSansWeb_Medium.eot');
+    src: url('../fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/woff/IRANSansWeb_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/eot/IRANSansWeb_Light.eot');
+    src: url('../fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/woff/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/eot/IRANSansWeb_UltraLight.eot');
+    src: url('../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/eot/IRANSansWeb.eot');
+    src: url('../fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background: #edf1f5;
+    margin: unset !important;
+    padding: unset !important;
+}
+
+* {
+    outline: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: IRANSans;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+img{
+    vertical-align: middle;
+    width: 100%;
+    min-width: 10px;
+    height: auto;
+    user-select: none;
+}
+
+a, span, label {
+    display: inline-block;
+}
+
+a{
+    text-decoration: none
+}
+
+ul li{
+    list-style: none;
+}
+
+p{
+    margin-bottom: unset;
+}
+
+[class*="col-"]{
+    padding: 0 ;
+}
+
+.container{
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.row{
+    padding: unset !important;
+}
+
+/*header start styles*/
+header{
+    display: flex;
+    width: 100%;
+    padding:15px 25px;
+    background: #872583;
+    justify-content:space-between;
+}
+
+.header__icon{
+    display: none;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+}
+
+.header__icon i{
+    margin-right: 10px;
+    padding: 5px ;
+    vertical-align: middle;
+}
+
+.header__icon i:hover{
+    scale:1.1;
+    color: #fce91e;
+}
+
+.dropdown-toggle{
+    color: unset;
+    position: relative;
+}
+
+.dropdown-toggle i{
+    margin-left: 15px;
+    vertical-align: middle;
+    font-size: 32px;
+}
+
+.dropdown-toggle:hover{
+    color: #fce91e;
+}
+
+.dropdown-menu{
+    border-radius: 20px;
+    padding:  15px 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.dropdown-body{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    font-size: 15px;
+    padding: 8px 12px;
+}
+
+.dropdown-body a:hover{
+    cursor: pointer;
+    color: #4a90e2;
+}
+
+.profile{
+    display: flex;
+}
+
+.profile-links{
+    display:inline-flex;
+    background: #ebeaea;
+    height: 30px;
+    font-size: 14px;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-right: 8px;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 8px;
+    border-radius: 15px;
+}
+
+.profile-links a{
+    color: black;
+}
+
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.logout{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logout a{
+    color: #5a5660;
+}
+
+.logout img{
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.dropdown-content:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown-toggle::after{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    margin-right: 8px;
+    border-top: 5px solid;
+    border-left: 5px solid transparent;
+    border-bottom: 0;
+    border-right: 5px solid transparent;
+}
+
+
+.header__logo{
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (min-width: 950px) {
+    .header__logo{
+        margin-right: 25px;
+    }
+    .header__icon{
+        display: flex;
+    }
+}
+
+.information{
+    color: #5a5660;
+    direction: rtl;
+    padding-right: 5px;
+}
+
+.information p:hover{
+    cursor: pointer;
+    color: #4a90e2;
+}
+
+.information p::before{
+    content: "-";
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/*roles-modal start css*/
+.modal{
+    padding-right: unset;
+}
+
+.modals .modal-content{
+    border-radius: 25px;
+    max-height: 80vh;
+}
+
+.modals .modal-header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.modals .modal-header h5{
+    color: #9b2a97;
+}
+
+.modals .btn-close{
+    margin: unset;
+}
+
+.modals .modal-body{
+    text-align: right;
+}
+.modals .modal-footer button{
+    background: #9b2a97;
+    color: white;
+    border-radius: 12px;
+}
+
+.modals .modal-footer button:hover{
+    color: #9b2a97;
+    background: white;
+    border: 1px solid  #9b2a97;
+}
+
+.modals .modal-body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px #9b2a97;
+    background-color: #F5F5F5;
+}
+
+.modals .modal-body::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+.modals .modal-body::-webkit-scrollbar-thumb
+{
+    background-color:  #9b2a97;
+    border: 2px solid  #9b2a97;
+}
+
+/*roles-modal end css*/
+/*header end styles*/
+/*main-content start styles*/
+main{
+    display: flex;
+    background-image: url(../img/panel-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    min-height: 90vh;
+}
+
+@media only  screen and (max-width: 950px){
+    main{
+        background-image:unset;
+    }
+}
+
+.main__content{
+    padding: 25px 3%;
+    flex-grow: 1;
+}
+
+.content__title{
+    font-size: 24px;
+    border-bottom: 1px solid #cccccc;
+    text-align: right;
+    padding-bottom: 5px;
+}
+/*main-content end styles*/
+/*sidebar-desktop start style*/
+.sidebar-desktop{
+    display: none;
+    width: 150px;
+    flex-shrink: 0;
+    height: 660px;
+    background: #9b2a97;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 950px) {
+    .sidebar-desktop{
+        display: flex;
+    }
+}
+
+.sidebar-desktop__item{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 135px;
+    position: relative;
+}
+
+.sidebar-desktop__item.active::before {
+    content: '';
+    position: absolute;
+    border-color: white;
+    border-top: 9px solid transparent;
+    border-left: 17px solid white;
+    border-bottom: 9px solid transparent;
+    left:0;
+    top: 50%;
+    transform: translate(0,-55%);
+}
+
+.sidebar-desktop__item:hover{
+    background: #82237e;
+    cursor: pointer;
+}
+
+.sidebar-desktop__item a{
+    font-size: 14px;
+    color: white;
+}
+
+.sidebar-desktop__item p{
+    margin-top: 8px;
+}
+
+.sidebar-desktop__item img{
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar-desktop__item:nth-child(2) img{
+    width: 45px;
+    height: 40px;
+}
+
+.sidebar-desktop__item:nth-child(5) img{
+    width: 45px;
+    height: 45px;
+}
+/*sidebar-desktop end style*/
+/*mobile menu start css*/
+@media only screen and (min-width: 950px) {
+    .mobile-menu{
+        display: none;
+    }
+}
+
+.menu-btn{
+    display: none;
+}
+
+.open {
+    z-index: 4;
+    background-color: white;
+    width: 24px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+}
+
+.open:before {
+    content: "";
+    background-color: white;
+    width: 24px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: -8px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.open:after {
+    content: "";
+    background-color: white;
+    width: 24px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: 4px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.menuOpen {
+    width: 24px;
+    height: 20px;
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.menuOpen:hover .open:before {
+    top: -9px;
+}
+
+.menuOpen:hover .open:after {
+    top: 5px;
+}
+
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(155, 42, 151, 0.9);
+    z-index: 3;
+}
+
+.menu label {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.menu .menuContent {
+    position: relative;
+    top: 50%;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -170px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.menu ul li a:hover {
+    color: #ff8702;
+}
+
+.menu ul li:hover {
+    background: white;
+}
+
+.menuEffects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+    transform: translateY(0%);
+    transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects ul {
+    opacity: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open {
+    background-color: transparent;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+    content: "";
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+    content: "";
+    background-color: white;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects ul {
+    transform: translateY(-30%);
+}
+/*mobile menu end css*/

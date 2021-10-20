@@ -1,0 +1,244 @@
+.table-box{
+    direction: rtl;
+    margin: 25px 0;
+    padding: 0 15px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    background: white;
+}
+
+table{
+    text-align: center;
+    border: unset;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    margin-bottom: unset !important;
+}
+
+thead tr{
+    padding-right: unset;
+    margin-bottom: unset;
+}
+
+tbody tr:hover{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.solid {
+    border: 1px #dbdbdb solid;
+    border-radius: 15px;
+}
+
+td ,th{
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.status-green ,.status-yellow,.status-gray{
+    text-align: center;
+    font-size: 14px;
+    width: 110px;
+    padding: 4px 0 5px 0;
+    border-radius: 12px;
+    color: white;
+    vertical-align: middle;
+}
+
+.status-green{
+    background: #179f1c;
+}
+
+.status-yellow{
+    background: #efb032;
+}
+
+.status-gray{
+    background: #a0a0a0;
+}
+
+.td-link {
+    padding: unset !important;
+}
+
+.td-link a{
+    color: white;
+    background: #9c2a98;
+    border: unset;
+    font-size: 22px;
+    padding: 8px 15px;
+    border-radius: 15px 0 0 15px;
+}
+
+.td-link a:hover{
+    background: #71206e;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .responsive > thead th {
+        display: none;
+    }
+    .responsive > tbody td,
+    .responsive > tbody th {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 5px 20px;
+        align-items: center;
+        text-align: center;
+    }
+    /*.responsive > tbody > tr:nth-child(even) td,*/
+    /*.responsive > tbody > tr:nth-child(even) th {*/
+    /*    background-color: #eee;*/
+    /*}*/
+    [row-header] {
+        position: relative;
+        width: 50%;
+        vertical-align: middle;
+    }
+    tr {
+        border: 0;
+        display: flex;
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+        /*text-align: center;*/
+        /*margin:10px 5px;*/
+        padding-right: 0;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    td{
+        width: 100%;
+    }
+    [row-header]:before {
+        content: attr(row-header);
+        display: inline-block;
+        /*margin-left: 15px;*/
+        vertical-align: middle;
+        /*text-align: left;*/
+        /*width: 50%;*/
+        /*padding-right:30px;*/
+    }
+
+    .td-link {
+        padding: unset !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin-bottom: 10px;
+    }
+
+    .td-link a{
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+        width: 40px;
+        height: 40px;
+        border-radius:  75% 15%;
+        transform: rotate(45deg);
+    }
+
+    .td-link i{
+        transform: rotate(-45deg);
+    }
+
+}
+
+.pagination{
+    display: flex;
+    margin-bottom: unset;
+}
+
+.pagination li{
+    margin: 0 3px;
+    padding: 3px 7px 0 7px;
+}
+
+.pagination li a{
+    color: #6e6b6b;
+}
+
+.pagination li.active{
+    background: #9b2997;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.pagination li.active a{
+    color: white;
+    cursor: no-drop;
+}
+
+.pagination a:hover{
+    background-color: transparent;
+    color: #4a90e2;
+}
+
+/*order__modal start css*/
+.order__modal .modal-body{
+    direction: rtl;
+    text-align: right;
+    padding: 25px;
+}
+
+.order__modal-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+
+}
+
+.order__modal p{
+    vertical-align: middle;
+}
+
+.order-value{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.form-btn-gp{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.form-btn-gp button{
+    background: #9b2a97;
+    color: white;
+    border-radius: 12px;
+}
+
+.form-btn-gp button:hover{
+    color: #9b2a97;
+    background: white;
+    border: 1px solid  #9b2a97;
+}
+
+.download__input{
+    height: 38px;
+    text-align: center;
+    padding: 5px 8px;
+    background: rgb(236, 236, 236);
+    color: rgb(79, 79, 79);
+    border-radius: 12px;
+    vertical-align:middle;
+}
+
+.download__input:hover{
+    background: rgb(161, 161, 161);
+}
+
+.download__input a{
+    cursor: pointer;
+    vertical-align: middle;
+    color:rgb(79, 79, 79);
+}
+
+.download__input i{
+    font-size: 20px;
+    margin-left: 4px;
+    margin-top: 3px;
+}

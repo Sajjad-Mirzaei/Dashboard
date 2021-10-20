@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.rtl.min.css" integrity="sha384-4dNpRvNX0c/TdYEbYup8qbjvjaMrgUPh+g4I03CnNtANuv+VAvPL6LqdwzZKV38G" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/message-centeral.css">
+        <title>message-centeral</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="mobile-menu">
+                    <div id="menuArea">
+                        <input type="checkbox" class="menu-btn" id="menuToggle"/>
+                        <label for="menuToggle" class="menuOpen">
+                            <div class="open"></div>
+                        </label>
+                        <div class="menu menuEffects">
+                            <label for="menuToggle"></label>
+                            <div class="menuContent">
+                                <ul>
+                                    <li><a href="#">داشبورد</a></li>
+                                    <li><a href="#">مرکز پیام</a></li>
+                                    <li><a href="#">سفارشات دریافت شده</a></li>
+                                    <li><a href="#">سفارشات ثبت شده</a></li>
+                                    <li><a href="#">خدمات و قیمت های من</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__icon">
+                    <div class="dropdown">
+                        <i class='fa fa-user'></i>
+                        <div class="information dropdown-content">
+                            <div class="dropdown-body">
+                                <a class="dropdown-item" href="#">لورم ایپسوم</a>
+                                <a class="dropdown-item" href="#">لورم ایپسوم</a>
+                                <a class="dropdown-item" href="#">لورم ایپسوم</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa fa-bell dropbtn"></i>
+                        <div class="dropdown-content">
+                            <div class="dropdown-body">
+                                <div class="profile">
+                                    <div class="profile-links">
+                                        <a href="#"><small>حساب کاربری</small></a>
+                                        <a href="#">نقش پاییز</a>
+                                    </div>
+                                    <img src="assets/img/profile.png" alt="">
+                                </div>
+                                <div class="logout">
+                                    <a href="#" class="d-flex">
+                                        خروج از حساب کاربری
+                                        <img src="assets/icon/logout-icon.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa fa-info-circle"></i>
+                        <div class="information dropdown-content">
+                            <div class="dropdown-body">
+                                <p data-bs-toggle="modal" data-bs-target="#roles-modal">قوانین و مقررات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__logo">
+                    <a href="#">
+                        <svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="52.36" height="52.36" viewBox="0 0 52.36 52.36">
+                            <path id="Path_4" data-name="Path 4" d="M783.289,711.36a26.18,26.18,0,1,0,26.18,26.18A26.18,26.18,0,0,0,783.289,711.36Zm0,41.888A15.708,15.708,0,1,1,799,737.54,15.708,15.708,0,0,1,783.289,753.248Z" transform="translate(-757.109 -711.36)" fill="#cd5bee"/>
+                            <path id="Path_5" data-name="Path 5" d="M799,737.325a15.708,15.708,0,0,1-31.416,0,20.945,20.945,0,0,0,41.888,0,26.181,26.181,0,0,0-52.36,0,20.945,20.945,0,0,1,41.888,0" transform="translate(-757.109 -711.36)" fill="#93278f"/>
+                        </svg>
+                    </a>
+                </div>
+            </header>
+            <main>
+                <div class="main__content">
+                    <div class="content__title">
+                        <p>مرکز پیام</p>
+                    </div>
+                    <div class="filter-box">
+                        <div class="search-box-gp">
+                            <div class="search-box">
+                                <div class="has-search">
+                                    <span class="fa fa-search form-control-feedback"></span>
+                                    <input type="text" class="form-control" placeholder="جستجو کن...">
+                                </div>
+                            </div>
+                            <div class="new-message">
+                                <a class="btn" href="">ارسال پیام</a>
+                            </div>
+                        </div>
+                        <div class="filter-box__selects">
+                           <div class="filter-box__select__row">
+                               <select class="form-select">
+                                   <option selected="">1399/11/13</option>
+                                   <option value="1">1399/11/14 </option>
+                                   <option value="2">1399/11/15</option>
+                                   <option value="3">1399/11/16</option>
+                               </select>
+                               <select class="form-select">
+                                   <option selected="">1399/11/13</option>
+                                   <option value="1">1399/11/14 </option>
+                                   <option value="2">1399/11/15</option>
+                                   <option value="3">1399/11/16</option>
+                               </select>
+                           </div>
+                           <div class="filter-box__select__row">
+                               <select class="form-select">
+                                   <option selected="">پیام های دریافتی</option>
+                                   <option>پیام های دریافتی</option>
+                                   <option >پیام های دریافتی</option>
+                               </select>
+                               <select class="form-select">
+                                   <option selected="">همه ی پیام ها</option>
+                                   <option value="1">همه ی پیام ها</option>
+                                   <option value="2">همه ی پیام ها</option>
+                                   <option value="3">همه ی پیام ها</option>
+                               </select>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="table-box table-responsive">
+                        <table class="table responsive table-borderless">
+                            <thead>
+                            <tr>
+                                <th>ردیف</th>
+                                <th>فرستنده</th>
+                                <th>عنوان پیام</th>
+                                <th>تاریخ ارسال</th>
+                                <th>ساعت</th>
+                                <th>آخرین پیام از</th>
+                                <th style="width: 52px"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="solid">
+                                <th row-header="ردیف" scope="row">1</th>
+                                <td row-header="فرستنده">ادمین</td>
+                                <td row-header="عنوان پیام">ورم ایپسوم متن ساختگی</td>
+                                <td row-header="تاریخ ارسال">1399/9/9</td>
+                                <td row-header="ساعت">16:24</td>
+                                <td row-header="آخرین پیام از">نقش پاییز</td>
+                                <td class="td-link"><a class="btn"  data-bs-toggle="modal" data-bs-target="#message-modal-1"><i class="fa fa-eye"></i></a></td>
+                            </tr>
+                            <tr class="solid">
+                                <th row-header="ردیف" scope="row">2</th>
+                                <td row-header="فرستنده">ادمین</td>
+                                <td row-header="عنوان پیام">ورم ایپسوم متن ساختگی</td>
+                                <td row-header="تاریخ ارسال">1399/9/9</td>
+                                <td row-header="ساعت">16:24</td>
+                                <td row-header="آخرین پیام از">نقش پاییز</td>
+                                <td class="td-link"><a class="btn"  data-bs-toggle="modal" data-bs-target="#message-modal-1"><i class="fa fa-eye"></i></a></td>
+                            </tr>
+                            <tr class="solid">
+                                <th row-header="ردیف" scope="row">3</th>
+                                <td row-header="فرستنده">ادمین</td>
+                                <td row-header="عنوان پیام">ورم ایپسوم متن ساختگی</td>
+                                <td row-header="تاریخ ارسال">1399/9/9</td>
+                                <td row-header="ساعت">16:24</td>
+                                <td row-header="آخرین پیام از">نقش پاییز</td>
+                                <td class="td-link"><a class="btn"  data-bs-toggle="modal" data-bs-target="#message-modal-1"><i class="fa fa-eye"></i></a></td>
+                            </tr>
+                            <tr class="solid">
+                                <th row-header="ردیف" scope="row">4</th>
+                                <td row-header="فرستنده">ادمین</td>
+                                <td row-header="عنوان پیام">ورم ایپسوم متن ساختگی</td>
+                                <td row-header="تاریخ ارسال">1399/9/9</td>
+                                <td row-header="ساعت">16:24</td>
+                                <td row-header="آخرین پیام از">نقش پاییز</td>
+                                <td class="td-link"><a class="btn"  data-bs-toggle="modal" data-bs-target="#message-modal-1"><i class="fa fa-eye"></i></a></td>
+                            </tr>
+                            <tr class="solid">
+                                <th row-header="ردیف" scope="row">5</th>
+                                <td row-header="فرستنده">ادمین</td>
+                                <td row-header="عنوان پیام">ورم ایپسوم متن ساختگی</td>
+                                <td row-header="تاریخ ارسال">1399/9/9</td>
+                                <td row-header="ساعت">16:24</td>
+                                <td row-header="آخرین پیام از">نقش پاییز</td>
+                                <td class="td-link"><a class="btn"  data-bs-toggle="modal" data-bs-target="#message-modal-1"><i class="fa fa-eye"></i></a></td>
+                            </tr>
+                            <tr class="solid">
+                                <th row-header="ردیف" scope="row">6</th>
+                                <td row-header="فرستنده">ادمین</td>
+                                <td row-header="عنوان پیام">ورم ایپسوم متن ساختگی</td>
+                                <td row-header="تاریخ ارسال">1399/9/9</td>
+                                <td row-header="ساعت">16:24</td>
+                                <td row-header="آخرین پیام از">نقش پاییز</td>
+                                <td class="td-link"><a class="btn"  data-bs-toggle="modal" data-bs-target="#message-modal-1"><i class="fa fa-eye"></i></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sidebar-desktop">
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/dashboard-icon.png" alt="dashboard-icon">
+                            <p>داشبورد</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center active">
+                        <a href="#">
+                            <img src="assets/icon/message-icon.png" alt="message-icon">
+                            <p>مرکز پیام</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/receive-orders-icon.png" alt="receive-orders-icon">
+                            <p>سفارشات دریافت شده</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/new-order-icon.png" alt="new-order-icon">
+                            <p>سفارشات ثبت شده</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/services-icon.png" alt="services-icon">
+                            <p>خدمات و قیمت های من</p>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="message__modal modals">
+            <div class="modal fade" id="message-modal-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="order-modal-title-1">لورم ایپسوم متن ساختگی</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="message-box px-2">
+                                <div class="date-message">
+                                    <hr>
+                                    <p>1399/12/11</p>
+                                </div>
+                                <div class="other-message">
+                                    <div class="other-message__head px-3 py-2 d-flex justify-content-between align-items-center">
+                                        <p>16:20</p>
+                                        <p class="message-sender">ادمین</p>
+                                    </div>
+                                    <div class="other-message__body px-3 py-3 d-flex justify-content-between">
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه</p>
+                                    </div>
+                                </div>
+                                <div class="my-message">
+                                     <div class="my-message__head px-3 py-2 d-flex justify-content-between align-items-center">
+                                         <p>16:20</p>
+                                         <p class="message-sender">شما</p>
+                                     </div>
+                                     <div class="my-message__body px-3 py-3 d-flex justify-content-between">
+                                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه</p>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="message__modal-form">
+                                <form action="#">
+                                    <div class="form-group mb-3">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-btn-gp">
+                                        <button type="submit" class="btn">ارسال</button>
+                                        <div class="upload__input">
+                                            <label for="upload-photo"><i class="fa fa-upload" aria-hidden="true"></i>آپلود فایل</label>
+                                            <input type="file" name="photo" id="upload-photo" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="roles__modal modals">
+            <div class="modal fade" id="roles-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">قوانین و مقررات</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحانگرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برایشرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان رامی طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی،و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام ودشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شاملحروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحانگرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برایشرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان رامی طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی،و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام ودشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شاملحروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-bs-dismiss="modal">تایید</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>

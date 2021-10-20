@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.rtl.min.css" integrity="sha384-4dNpRvNX0c/TdYEbYup8qbjvjaMrgUPh+g4I03CnNtANuv+VAvPL6LqdwzZKV38G" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/dashboard.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>dashboard</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="mobile-menu">
+                    <div id="menuArea">
+                        <input type="checkbox" class="menu-btn" id="menuToggle"/>
+                        <label for="menuToggle" class="menuOpen">
+                            <div class="open"></div>
+                        </label>
+                        <div class="menu menuEffects">
+                            <label for="menuToggle"></label>
+                            <div class="menuContent">
+                                <ul>
+                                    <li><a href="#">داشبورد</a></li>
+                                    <li><a href="#">مرکز پیام</a></li>
+                                    <li><a href="#">سفارشات دریافت شده</a></li>
+                                    <li><a href="#">سفارشات ثبت شده</a></li>
+                                    <li><a href="#">خدمات و قیمت های من</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__icon">
+                    <div class="dropdown">
+                        <i class='fa fa-user'></i>
+                        <div class="information dropdown-content">
+                            <div class="dropdown-body">
+                                <a class="dropdown-item" href="#">لورم ایپسوم</a>
+                                <a class="dropdown-item" href="#">لورم ایپسوم</a>
+                                <a class="dropdown-item" href="#">لورم ایپسوم</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa fa-bell dropbtn"></i>
+                        <div class="dropdown-content">
+                            <div class="dropdown-body">
+                                <div class="profile">
+                                    <div class="profile-links">
+                                        <a href="#"><small>حساب کاربری</small></a>
+                                        <a href="#">نقش پاییز</a>
+                                    </div>
+                                    <img src="assets/img/profile.png" alt="">
+                                </div>
+                                <div class="logout">
+                                    <a href="#" class="d-flex">
+                                        خروج از حساب کاربری
+                                        <img src="assets/icon/logout-icon.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa fa-info-circle"></i>
+                        <div class="information dropdown-content">
+                            <div class="dropdown-body">
+                                <p data-bs-toggle="modal" data-bs-target="#roles-modal">قوانین و مقررات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__logo">
+                    <a href="#">
+                        <svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="52.36" height="52.36" viewBox="0 0 52.36 52.36">
+                            <path id="Path_4" data-name="Path 4" d="M783.289,711.36a26.18,26.18,0,1,0,26.18,26.18A26.18,26.18,0,0,0,783.289,711.36Zm0,41.888A15.708,15.708,0,1,1,799,737.54,15.708,15.708,0,0,1,783.289,753.248Z" transform="translate(-757.109 -711.36)" fill="#cd5bee"/>
+                            <path id="Path_5" data-name="Path 5" d="M799,737.325a15.708,15.708,0,0,1-31.416,0,20.945,20.945,0,0,0,41.888,0,26.181,26.181,0,0,0-52.36,0,20.945,20.945,0,0,1,41.888,0" transform="translate(-757.109 -711.36)" fill="#93278f"/>
+                        </svg>
+                    </a>
+                </div>
+            </header>
+            <main>
+                <div class="main__content">
+                    <div class="content__title">
+                        <p>داشبورد</p>
+                    </div>
+                    <div class="dashboard__search">
+                        <div class="search__title">
+                            <p>جستجوی خدمات در شهر مورد نظر</p>
+                        </div>
+                        <div class="search__body">
+                            <form action="">
+                                <div class="form-body">
+                                    <div class="form-row">
+                                        <div class="form-child form-group">
+                                            <label for="city" class="form-label">شهر</label>
+                                            <select class="form-select" id="city">
+                                                <option selected>تهران</option>
+                                                <option value="1">تهران</option>
+                                                <option value="2">تهران</option>
+                                                <option value="3">تهران</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-child form-group">
+                                            <label for="area" class="form-label">منطقه</label>
+                                            <select class="form-select" id="area">
+                                                <option selected>منطقه 1</option>
+                                                <option value="1">منطقه 2</option>
+                                                <option value="2">منطقه 3</option>
+                                                <option value="3">منطقه 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-child form-group">
+                                            <label for="service-kind" class="form-label">نوع خدمت</label>
+                                            <input class="form-control" id="service-kind">
+                                        </div>
+                                        <div class="form-child form-group">
+                                            <label for="service-provider" class="form-label">نام ارائه دهنده</label>
+                                            <input class="form-control" id="service-provider">
+                                        </div>
+                                    </div>
+                                    <div class="form-btn form-group">
+                                        <button type="submit" class="btn">جستجو</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="best-partners">
+                        <div class="best-partners__title">
+                            <p>همکاران برتر</p>
+                            <a class="btn">مشاهده همه</a>
+                        </div>
+                        <div class="best-partners__body">
+                            <div class="best-partners__carousel" data-flickity='{ "groupCells": true }'>
+                                <!--max 8x-->
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';" >
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                                <div class="best-partners__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="caro-header__img">
+                                        <img src="assets/img/profile.png" alt="best-partner-img">
+                                    </div>
+                                    <div class="partner__des">
+                                        <div class="partner__spec">
+                                            <div class="partner__icon">
+                                                <img src="assets/img/profile.png" alt="partner__icon">
+                                            </div>
+                                            <div class="partner__info">
+                                                <a href="#">نقش پاییز</a>
+                                                <small>منطقه 5</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="partner__text">
+                                        <p> آدرس: لورم ایپسوم متن ساختگی با
+                                            تولید سادگی نامفهوم</p>
+                                    </div>
+                                    <div class="best-partners__footer">
+                                        <span>نظرات کاربران: 2</span>
+                                        <span> امتیاز: 5.4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="favorite-products">
+                        <div class="favorite-products__title">
+                            <p>محصولات محبوب</p>
+                            <a class="btn">مشاهده همه</a>
+                        </div>
+                        <div class="favorite-products__body">
+                            <div class="favorite-products__carousel" data-flickity='{ "groupCells": true }'>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                                <div class="favorite-products__carousel-cell" onclick="location.href='YOUR-URL-HERE';">
+                                    <div class="product__img">
+                                        <img src="assets/img/profile.png" alt="product-img">
+                                    </div>
+                                    <div class="porduct__name text-center">
+                                        <a href="#">لورم ایپسوم</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-desktop">
+                    <div class="sidebar-desktop__item text-center active">
+                        <a href="#">
+                            <img src="assets/icon/dashboard-icon.png" alt="dashboard-icon">
+                            <p>داشبورد</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/message-icon.png" alt="message-icon">
+                            <p>مرکز پیام</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/receive-orders-icon.png" alt="receive-orders-icon">
+                            <p>سفارشات دریافت شده</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/new-order-icon.png" alt="new-order-icon">
+                            <p>سفارشات ثبت شده</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/services-icon.png" alt="services-icon">
+                            <p>خدمات و قیمت های من</p>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="roles__modal modals">
+            <div class="modal fade" id="roles-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">قوانین و مقررات</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحانگرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برایشرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان رامی طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی،و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام ودشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شاملحروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحانگرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برایشرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان رامی طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی،و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام ودشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شاملحروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-bs-dismiss="modal">تایید</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="assets/js/carousel.js"></script>
+    </body>
+</html>

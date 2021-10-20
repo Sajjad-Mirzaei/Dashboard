@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.rtl.min.css" integrity="sha384-4dNpRvNX0c/TdYEbYup8qbjvjaMrgUPh+g4I03CnNtANuv+VAvPL6LqdwzZKV38G" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/profile.css">
+        <title>profile</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="mobile-menu">
+                    <div id="menuArea">
+                        <input type="checkbox" class="menu-btn" id="menuToggle"/>
+                        <label for="menuToggle" class="menuOpen">
+                            <div class="open"></div>
+                        </label>
+                        <div class="menu menuEffects">
+                            <label for="menuToggle"></label>
+                            <div class="menuContent">
+                                <ul>
+                                    <li><a href="#">داشبورد</a></li>
+                                    <li><a href="#">مرکز پیام</a></li>
+                                    <li><a href="#">سفارشات دریافت شده</a></li>
+                                    <li><a href="#">سفارشات ثبت شده</a></li>
+                                    <li><a href="#">خدمات و قیمت های من</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__icon">
+                    <div class="dropdown">
+                        <i class='fa fa-user'></i>
+                        <div class="information dropdown-content">
+                            <div class="dropdown-body">
+                                <a class="dropdown-item" href="#">لورم ایپسوم</a>
+                                <a class="dropdown-item" href="#">لورم ایپسوم</a>
+                                <a class="dropdown-item" href="#">لورم ایپسوم</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa fa-bell dropbtn"></i>
+                        <div class="dropdown-content">
+                            <div class="dropdown-body">
+                                <div class="profile">
+                                    <div class="profile-links">
+                                        <a href="#"><small>حساب کاربری</small></a>
+                                        <a href="#">نقش پاییز</a>
+                                    </div>
+                                    <img src="assets/img/profile.png" alt="">
+                                </div>
+                                <div class="logout">
+                                    <a href="#" class="d-flex">
+                                        خروج از حساب کاربری
+                                        <img src="assets/icon/logout-icon.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa fa-info-circle"></i>
+                        <div class="information dropdown-content">
+                            <div class="dropdown-body">
+                                <p data-bs-toggle="modal" data-bs-target="#roles-modal">قوانین و مقررات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__logo">
+                    <a href="#">
+                        <svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="52.36" height="52.36" viewBox="0 0 52.36 52.36">
+                            <path id="Path_4" data-name="Path 4" d="M783.289,711.36a26.18,26.18,0,1,0,26.18,26.18A26.18,26.18,0,0,0,783.289,711.36Zm0,41.888A15.708,15.708,0,1,1,799,737.54,15.708,15.708,0,0,1,783.289,753.248Z" transform="translate(-757.109 -711.36)" fill="#cd5bee"/>
+                            <path id="Path_5" data-name="Path 5" d="M799,737.325a15.708,15.708,0,0,1-31.416,0,20.945,20.945,0,0,0,41.888,0,26.181,26.181,0,0,0-52.36,0,20.945,20.945,0,0,1,41.888,0" transform="translate(-757.109 -711.36)" fill="#93278f"/>
+                        </svg>
+                    </a>
+                </div>
+            </header>
+            <main>
+                <div class="main__content">
+                    <div class="content-1"></div>
+                    <div class="content-2">
+                        <div class="edit-profile">
+                            <a href="" class="btn">ویرایش حساب کاربري</a>
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile-title">
+                                <div class="rating">
+                                    <span>5</span>
+                                    <span>از</span>
+                                    <span>4.5</span>
+                                    <i class="fa fa-star mr-3" aria-hidden="true"></i>
+                                </div>
+                                <div class="d-flex flex-column align-items-center align-items-md-stretch">
+                                    <h1>خدمات چاپ دیجیتال نقش پاییز</h1>
+                                    <p>با مدیریت آقاي شریفی</p>
+                                </div>
+                            </div>
+                            <img src="assets/img/profile.png" alt="avatar">
+                        </div>
+                    </div>
+                    <div class="content-3 row">
+                        <div class="content-3_1 col-12 col-sm-6">
+                            <div class="content-3_1_title">
+                                <a data-bs-toggle="modal" data-bs-target="#comment-modal" class="btn">ارسال نظر</a>
+                                <p>نظرات کاربران</p>
+                            </div>
+                            <div class="content-3_1_body">
+                                <div class="sticker">
+                                    <img src="assets/icon/sticker-2.svg" alt="">
+                                    <p><span>درصد ناراضی</span>73</p>
+                                </div>
+                                <div class="sticker">
+                                    <img src="assets/icon/sticker-1.svg" alt="">
+                                    <p><span>درصد معمولی</span>73</p>
+                                </div>
+                                <div class="sticker">
+                                    <img src="assets/icon/sticker-3.svg" alt="">
+                                    <p><span>درصد راضی</span>73</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-3_2 col-12 col-sm-6">
+                            <div class="d-flex flex-grow-1 align-items-center justify-content-center flex-column flex-sm-row">
+                                <div class="flex-50">
+                                    <p>سال تاسیس :</p>
+                                    <p class="value">1386</p>
+                                </div>
+                                <div class="flex-50">
+                                    <p>منطقه:</p>
+                                    <p class="value">منطقه 5</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-grow-1 align-items-center justify-content-center flex-column flex-sm-row">
+                                <div class="flex-50">
+                                    <p>کد پستی :</p>
+                                    <p class="value">1386</p>
+                                </div>
+                                <div class="flex-50">
+                                    <p>تلفن:</p>
+                                    <p class="value">منطقه 5</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-grow-1 align-items-center">
+                                <p class="flex-shrink-0">آدرس :</p>
+                                <p class="address value">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-4">
+                        <div class="services">
+                            <div class="title">
+                                <p>خدمات نقش پاییز</p>
+                            </div>
+                           <div class="services__items row">
+                               <div class="col-12 col-md-6 col-lg-3 px-3">
+                                   <div class="service">
+                                       <img src="assets/img/profile.png" alt="">
+                                       <span>ارائه دهنده</span>
+                                       <p>پوستر</p>
+                                       <p>شروع قیمت از:10000تومان</p>
+                                       <a data-bs-toggle="modal" data-bs-target="#step-one" class="btn">سفارش دهید</a>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-6 col-lg-3 px-3">
+                                   <div class="service">
+                                       <img src="assets/img/profile.png" alt="">
+                                       <span>ارائه دهنده</span>
+                                       <p>پوستر</p>
+                                       <p>شروع قیمت از:10000تومان</p>
+                                       <a data-bs-toggle="modal" data-bs-target="#step-one" class="btn">سفارش دهید</a>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-6 col-lg-3 px-3">
+                                   <div class="service">
+                                       <img src="assets/img/profile.png" alt="">
+                                       <span>ارائه دهنده</span>
+                                       <p>پوستر</p>
+                                       <p>شروع قیمت از:10000تومان</p>
+                                       <a data-bs-toggle="modal" data-bs-target="#step-one" class="btn">سفارش دهید</a>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-6 col-lg-3 px-3">
+                                   <div class="service">
+                                       <img src="assets/img/profile.png" alt="">
+                                       <span>ارائه دهنده</span>
+                                       <p>پوستر</p>
+                                       <p>شروع قیمت از:10000تومان</p>
+                                       <a data-bs-toggle="modal" data-bs-target="#step-one" class="btn">سفارش دهید</a>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-6 col-lg-3 px-3">
+                                   <div class="service">
+                                       <img src="assets/img/profile.png" alt="">
+                                       <span>ارائه دهنده</span>
+                                       <p>پوستر</p>
+                                       <p>شروع قیمت از:10000تومان</p>
+                                       <a data-bs-toggle="modal" data-bs-target="#step-one" class="btn">سفارش دهید</a>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-6 col-lg-3 px-3">
+                                   <div class="service">
+                                       <img src="assets/img/profile.png" alt="">
+                                       <span>ارائه دهنده</span>
+                                       <p>پوستر</p>
+                                       <p>شروع قیمت از:10000تومان</p>
+                                       <a data-bs-toggle="modal" data-bs-target="#step-one" class="btn">سفارش دهید</a>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-desktop">
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/dashboard-icon.png" alt="dashboard-icon">
+                            <p>داشبورد</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/message-icon.png" alt="message-icon">
+                            <p>مرکز پیام</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/receive-orders-icon.png" alt="receive-orders-icon">
+                            <p>سفارشات دریافت شده</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/new-order-icon.png" alt="new-order-icon">
+                            <p>سفارشات ثبت شده</p>
+                        </a>
+                    </div>
+                    <div class="sidebar-desktop__item text-center">
+                        <a href="#">
+                            <img src="assets/icon/services-icon.png" alt="services-icon">
+                            <p>خدمات و قیمت هاي من</p>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="roles__modal modals">
+            <div class="modal fade" id="roles-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">قوانین و مقررات</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحانگرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برايشرایط فعلی تکنولوژي مورد نیاز، و کاربردهاي متنوع با هدف بهبود ابزارهاي کاربردي می باشد،کتابهاي زیادي در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان رامی طلبد، تا با نرم افزارها شناخت بیشتري را براي طراحان رایانه اي علی الخصوص طراحان خلاقی،و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام ودشواري موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شاملحروفچینی دستاوردهاي اصلی، و جوابگوي سوالات پیوسته اهل دنیاي موجود طراحی اساسا مورد
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحانگرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برايشرایط فعلی تکنولوژي مورد نیاز، و کاربردهاي متنوع با هدف بهبود ابزارهاي کاربردي می باشد،کتابهاي زیادي در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان رامی طلبد، تا با نرم افزارها شناخت بیشتري را براي طراحان رایانه اي علی الخصوص طراحان خلاقی،و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام ودشواري موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شاملحروفچینی دستاوردهاي اصلی، و جوابگوي سوالات پیوسته اهل دنیاي موجود طراحی اساسا مورد
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-bs-dismiss="modal">تایید</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment__modal modals">
+            <div class="modal fade" id="comment-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comment__modal-h5">نظرات کاربران</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-3">
+                            <div class="top">
+                                <div class="sticker-box">
+                                    <div class="sticker">
+                                        <img src="assets/icon/sticker-2.svg" alt="">
+                                        <p><span>درصد ناراضی</span>73</p>
+                                    </div>
+                                    <div class="sticker">
+                                        <img src="assets/icon/sticker-1.svg" alt="">
+                                        <p><span>درصد معمولی</span>73</p>
+                                    </div>
+                                    <div class="sticker">
+                                        <img src="assets/icon/sticker-3.svg" alt="">
+                                        <p><span>درصد راضی</span>73</p>
+                                    </div>
+                                </div>
+                                <div class="show-rating">
+                                    <div class="d-flex flex-row">
+                                        <div class="rating mr-3">
+                                            <span>5</span>
+                                            <span>از</span>
+                                            <span>4.5</span>
+                                            <i class="fa fa-star mr-3" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="show-rating-stars">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked "></span>
+                                            <span class="fa fa-star-half-o"></span>
+                                        </div>
+                                    </div>
+                                    <p class="mt-2">از مجموع 13400 رای</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <form action="">
+                                    <div class="send-comment row">
+                                        <div class="col-12 col-sm-12 col-lg-8 d-flex">
+                                            <div class="width-100">
+                                                <textarea class="form-control" id="data-1" rows="6"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-lg-4 ps-4">
+                                            <div class="mt-2">
+                                                <label for="data-2" class="form-label">کد امنیتی را وارد کنید</label>
+                                                <input type="text" class="form-control" id="data-2">
+                                            </div>
+                                            <div class="recaptcha-img">
+
+                                            </div>
+                                            <div class="rate text-center">
+                                                <input type="radio" id="star5" name="rate" value="5" />
+                                                <label for="star5" title="text">5 stars</label>
+                                                <input type="radio" id="star4" name="rate" value="4" />
+                                                <label for="star4" title="text">4 stars</label>
+                                                <input type="radio" id="star3" name="rate" value="3" />
+                                                <label for="star3" title="text">3 stars</label>
+                                                <input type="radio" id="star2" name="rate" value="2" />
+                                                <label for="star2" title="text">2 stars</label>
+                                                <input type="radio" id="star1" name="rate" value="1" />
+                                                <label for="star1" title="text">1 star</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-between form-btn-gp">
+                                            <button type="submit" class="btn">ارسال</button>
+                                            <div class="upload__input">
+                                                <label for="upload-photo"><i class="fa fa-upload" aria-hidden="true"></i>آپلود فایل</label>
+                                                <input type="file" name="photo" id="upload-photo"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="bottom">
+                                <div class="comment-show-row row">
+                                    <div class="comment-show__title col-12 col-sm-12 col-md-3">
+                                        <p class="title">خدمات چاپ دیجیتال نقش پاییز</p>
+                                        <div class="comment-sticker">
+                                            <img src="assets/icon/sticker-1.svg" alt="">
+                                            <p>1399/11/12</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-show__text col-12 col-sm-12 col-md-9 ps-2">
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متونبلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز</p>
+                                    </div>
+                                </div>
+                                <div class="comment-show-row row">
+                                    <div class="comment-show__title col-12 col-sm-12 col-md-3">
+                                        <p class="title">خدمات چاپ دیجیتال نقش پاییز</p>
+                                        <div class="comment-sticker">
+                                            <img src="assets/icon/sticker-1.svg" alt="">
+                                            <p>1399/11/12</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-show__text col-12 col-sm-12 col-md-9 ps-2">
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متونبلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز</p>
+                                    </div>
+                                </div>
+                                <div class="comment-show-row row">
+                                    <div class="comment-show__title col-12 col-sm-12 col-md-3">
+                                        <p class="title">خدمات چاپ دیجیتال نقش پاییز</p>
+                                        <div class="comment-sticker">
+                                            <img src="assets/icon/sticker-1.svg" alt="">
+                                            <p>1399/11/12</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-show__text col-12 col-sm-12 col-md-9 ps-2">
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متونبلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز</p>
+                                    </div>
+                                </div>
+                                <div class="comment-show-row row">
+                                    <div class="comment-show__title col-12 col-sm-12 col-md-3">
+                                        <p class="title">خدمات چاپ دیجیتال نقش پاییز</p>
+                                        <div class="comment-sticker">
+                                            <img src="assets/icon/sticker-1.svg" alt="">
+                                            <p>1399/11/12</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-show__text col-12 col-sm-12 col-md-9 ps-2">
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متونبلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز</p>
+                                    </div>
+                                </div>
+                                <div class="comment-show-row row">
+                                    <div class="comment-show__title col-12 col-sm-12 col-md-3">
+                                        <p class="title">خدمات چاپ دیجیتال نقش پاییز</p>
+                                        <div class="comment-sticker">
+                                            <img src="assets/icon/sticker-1.svg" alt="">
+                                            <p>1399/11/12</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-show__text col-12 col-sm-12 col-md-9 ps-2">
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متونبلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز</p>
+                                    </div>
+                                </div>
+                                <div class="comment-show-row row">
+                                    <div class="comment-show__title col-12 col-sm-12 col-md-3">
+                                        <p class="title">خدمات چاپ دیجیتال نقش پاییز</p>
+                                        <div class="comment-sticker">
+                                            <img src="assets/icon/sticker-1.svg" alt="">
+                                            <p>1399/11/12</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-show__text col-12 col-sm-12 col-md-9 ps-2">
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متونبلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز</p>
+                                    </div>
+                                </div>
+                                <div class="comment-show-row row">
+                                    <div class="comment-show__title col-12 col-sm-12 col-md-3">
+                                        <p class="title">خدمات چاپ دیجیتال نقش پاییز</p>
+                                        <div class="comment-sticker">
+                                            <img src="assets/icon/sticker-1.svg" alt="">
+                                            <p>1399/11/12</p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-show__text col-12 col-sm-12 col-md-9 ps-2">
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متونبلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-one__modal modals">
+            <div class="modal fade" id="step-one" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="padding-right: unset !important;">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="step-one-h5">سفارش خدمات</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-header d-flex justify-content-center">
+                            <div class="steps">
+                                <hr>
+                                <div class="step-1 active">گام اول</div>
+                                <div class="step-2">گام دوم</div>
+                                <div class="step-3">گام سوم</div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <h5>قوانین و مقررات</h5>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون وسطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز،لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون وسطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز،لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون وسطرآنچنان که لازم است، و براي شرایط فعلی تکنولوژي مورد نیاز
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#step-two">مرحله ی بعد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-two__modal modals">
+            <div class="modal fade" id="step-two" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="padding-right: unset !important;">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="step-two-h5">سفارش خدمات</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-header d-flex justify-content-center">
+                            <div class="steps">
+                                <hr>
+                                <div class="step-1">گام اول</div>
+                                <div class="step-2 active">گام دوم</div>
+                                <div class="step-3">گام سوم</div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-body row">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group full-from-row">
+                                            <label for="input-1" class="form-label">جنس</label>
+                                            <input type="text" class="form-control" id="input-1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group d-flex flex-row half-from-row">
+                                            <input type="text" class="form-control" id="input-2">
+                                            <p>:</p>
+                                            <input type="text" class="form-control" id="input-3">
+                                            <label for="input-3" class="form-label">عرض</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group full-from-row">
+                                            <label for="input-4" class="form-label">تعداد</label>
+                                            <input type="text" class="form-control" id="input-4">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="form-group d-flex flex-row half-from-row">
+                                            <input type="text" class="form-control" id="input-5">
+                                            <p>:</p>
+                                            <input type="text" class="form-control" id="input-6">
+                                            <label for="input-6" class="form-label">رتفاع</label>
+                                        </div>
+                                    </div>
+                                    <div class="calc-price col-12">
+                                        <button type="submit" class="btn">مــحـاسبه مــبــلــغ</button>
+                                        <span class="fa fa-caret-down"></span>
+                                        <div class="d-flex align-items-center flex-column-reverse flex-sm-row">
+                                            <p class="price"> 126،300 </p>
+                                            <p>  : مبلغ محاسبه شده به تومان</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#step-three">نهایی کردن سفارش</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-three__modal modals">
+            <div class="modal fade" id="step-three" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="padding-right: unset !important;">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="step-three-h5">سفارش خدمات</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-header d-flex justify-content-center">
+                            <div class="steps">
+                                <hr>
+                                <div class="step-1">گام اول</div>
+                                <div class="step-2">گام دوم</div>
+                                <div class="step-3 active">گام سوم</div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex flex-column px-3">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="form-group width-100">
+                                                <textarea  class="form-control" placeholder="توضیحات تکمیلی و فایل ضمیمه" id="text-area-1"></textarea>
+                                            </div>
+                                            <div class="upload__input">
+                                                <label for="upload-photo"><i class="fa fa-upload" aria-hidden="true"></i>آپلود فایل</label>
+                                                <input type="file" name="photo" id="upload-photo-2" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex flex-column px-3">
+                                    <div class="factor">
+                                        <div class="factor-row">
+                                            <p>قیمت فاکتور</p>
+                                            <p class="factor-price">126،300</p>
+                                        </div>
+                                        <div class="factor-row">
+                                            <p>قیمت نهایی با احتساب کارمزد</p>
+                                            <p class="price">126،300</p>
+                                        </div>
+                                    </div>
+                                    <div class="factor-sub-text px-3 py-3">
+                                        <p>تا زمانی که پرداخت آنلاین را انجام نداده باشید، سفارش شما ثبت نخواهد شد</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#final-step">ثبت نهایی و پرداخت آنلاین</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-step__modal modals">
+            <div class="modal fade" id="final-step" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="padding-right: unset !important;">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="final-step-h5">سفارش خدمات</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="final-step-body">
+                                <img src="assets/icon/062-check.svg" alt="">
+                                <p>سفارش شما با موفقیت ثبت شد، براي پیگیريبه بخش سفارشات ثبت شده مراجعه کنید</p>
+                                <a href="" class="btn">ورود به سفارشات ثبت شده</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>
